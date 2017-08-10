@@ -53,6 +53,7 @@ group :development do
   gem 'rubocop', '~> 0.49.1'
   gem 'bullet'
   gem 'oink'
+  gem 'annotate'
 
 end
 
