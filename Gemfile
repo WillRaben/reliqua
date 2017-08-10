@@ -54,6 +54,7 @@ group :development do
   gem 'bullet'
   gem 'oink'
   gem 'annotate'
+  gem 'rails-data-migrations'
 
 end
 
