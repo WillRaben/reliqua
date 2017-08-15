@@ -56,6 +56,6 @@ Rails.application.configure do
   config.web_console.whitelisted_ips = '192.168.11.1'
   end
 
-
+  config.x.webpacker[:dev_server_host] = "http://127.0.0.1:8080"
 
 end
