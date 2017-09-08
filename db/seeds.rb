@@ -5,3 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+#change the password before setting the system up!
+ User.create( {:email => 'wilmer.raben@gmail.com', :password => '123qweasd', :role => 999, :first_name => 'wilmer', :last_name => 'raben'})
