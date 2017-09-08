@@ -1,0 +1,556 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ * aarequire_tree .
+ * aarequire_self
+ * require sb-admin
+ */
+/* line 3, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_global.scss */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+/* line 8, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_global.scss */
+body.sticky-footer {
+  margin-bottom: 56px;
+}
+/* line 10, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_global.scss */
+body.sticky-footer .content-wrapper {
+  min-height: calc(100vh - 56px - 56px);
+}
+
+/* line 15, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_global.scss */
+body.fixed-nav {
+  padding-top: 56px;
+}
+
+/* line 19, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_global.scss */
+.content-wrapper {
+  min-height: calc(100vh - 56px);
+  padding-top: 1rem;
+}
+
+/* line 25, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_global.scss */
+.scroll-to-top {
+  position: fixed;
+  right: 15px;
+  bottom: 3px;
+  display: none;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: white;
+  background: rgba(52, 58, 64, 0.5);
+  line-height: 45px;
+}
+/* line 41, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_global.scss */
+.scroll-to-top:focus, .scroll-to-top:hover {
+  color: white;
+}
+/* line 45, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_global.scss */
+.scroll-to-top:hover {
+  background: #343a40;
+}
+/* line 48, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_global.scss */
+.scroll-to-top i {
+  font-weight: 800;
+}
+
+/* line 2, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_utilities.scss */
+.smaller {
+  font-size: 0.7rem;
+}
+
+/* line 7, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_utilities.scss */
+.o-hidden {
+  overflow: hidden !important;
+}
+
+/* line 12, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_utilities.scss */
+.z-0 {
+  z-index: 0;
+}
+
+/* line 16, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_utilities.scss */
+.z-1 {
+  z-index: 1;
+}
+
+/* line 3, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_cards.scss */
+.card-body-icon {
+  position: absolute;
+  z-index: 0;
+  top: -25px;
+  right: -25px;
+  font-size: 5rem;
+  -webkit-transform: rotate(15deg);
+  transform: rotate(15deg);
+}
+
+@media (min-width: 576px) {
+  /* line 14, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_cards.scss */
+  .card-columns {
+    -webkit-column-count: 1;
+            column-count: 1;
+  }
+}
+@media (min-width: 768px) {
+  /* line 14, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_cards.scss */
+  .card-columns {
+    -webkit-column-count: 2;
+            column-count: 2;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 14, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_cards.scss */
+  .card-columns {
+    -webkit-column-count: 2;
+            column-count: 2;
+  }
+}
+
+/* line 2, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar.scss */
+#mainNav .navbar-collapse {
+  overflow: auto;
+  max-height: 75vh;
+}
+/* line 8, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar.scss */
+#mainNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+  cursor: pointer;
+}
+/* line 14, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar.scss */
+#mainNav .navbar-collapse .navbar-sidenav .nav-link-collapse:after {
+  float: right;
+  content: '\f107';
+  font-family: 'FontAwesome';
+}
+/* line 21, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar.scss */
+#mainNav .navbar-collapse .navbar-sidenav .nav-link-collapse.collapsed:after {
+  content: '\f105';
+}
+/* line 24, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar.scss */
+#mainNav .navbar-collapse .navbar-sidenav .sidenav-second-level,
+#mainNav .navbar-collapse .navbar-sidenav .sidenav-third-level {
+  padding-left: 0;
+}
+/* line 27, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar.scss */
+#mainNav .navbar-collapse .navbar-sidenav .sidenav-second-level > li > a,
+#mainNav .navbar-collapse .navbar-sidenav .sidenav-third-level > li > a {
+  display: block;
+  padding: 0.5em 0;
+}
+/* line 31, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar.scss */
+#mainNav .navbar-collapse .navbar-sidenav .sidenav-second-level > li > a:focus, #mainNav .navbar-collapse .navbar-sidenav .sidenav-second-level > li > a:hover,
+#mainNav .navbar-collapse .navbar-sidenav .sidenav-third-level > li > a:focus,
+#mainNav .navbar-collapse .navbar-sidenav .sidenav-third-level > li > a:hover {
+  text-decoration: none;
+}
+/* line 37, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar.scss */
+#mainNav .navbar-collapse .navbar-sidenav .sidenav-second-level > li > a {
+  padding-left: 1em;
+}
+/* line 40, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar.scss */
+#mainNav .navbar-collapse .navbar-sidenav .sidenav-third-level > li > a {
+  padding-left: 2em;
+}
+/* line 44, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar.scss */
+#mainNav .navbar-collapse .sidenav-toggler {
+  display: none;
+}
+/* line 48, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar.scss */
+#mainNav .navbar-collapse .navbar-nav > .nav-item.dropdown > .nav-link {
+  position: relative;
+  min-width: 45px;
+}
+/* line 52, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar.scss */
+#mainNav .navbar-collapse .navbar-nav > .nav-item.dropdown > .nav-link:after {
+  float: right;
+  width: auto;
+  content: '\f105';
+  border: none;
+  font-family: 'FontAwesome';
+}
+/* line 63, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar.scss */
+#mainNav .navbar-collapse .navbar-nav > .nav-item.dropdown > .nav-link .new-indicator {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 1.1rem;
+}
+/* line 69, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar.scss */
+#mainNav .navbar-collapse .navbar-nav > .nav-item.dropdown > .nav-link .new-indicator .number {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 22.625px;
+  text-align: center;
+  color: white;
+  font-size: 0.5rem;
+}
+/* line 84, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar.scss */
+#mainNav .navbar-collapse .navbar-nav > .nav-item.dropdown.show > .nav-link:after {
+  content: '\f107';
+}
+/* line 87, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar.scss */
+#mainNav .navbar-collapse .navbar-nav > .nav-item.dropdown .dropdown-menu > .dropdown-item > .dropdown-message {
+  overflow: hidden;
+  max-width: none;
+  text-overflow: ellipsis;
+}
+@media (min-width: 992px) {
+  /* line 97, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar.scss */
+  #mainNav .navbar-brand {
+    width: 250px;
+  }
+  /* line 100, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar.scss */
+  #mainNav .navbar-collapse {
+    overflow: visible;
+    max-height: none;
+  }
+  /* line 104, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar.scss */
+  #mainNav .navbar-collapse .navbar-sidenav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -ms-flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    margin-top: 56px;
+  }
+  /* line 117, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar.scss */
+  #mainNav .navbar-collapse .navbar-sidenav > .nav-item {
+    width: 250px;
+    padding: 0;
+  }
+  /* line 120, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar.scss */
+  #mainNav .navbar-collapse .navbar-sidenav > .nav-item > .nav-link {
+    padding: 1em;
+  }
+  /* line 123, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar.scss */
+  #mainNav .navbar-collapse .navbar-sidenav > .nav-item .sidenav-second-level,
+  #mainNav .navbar-collapse .navbar-sidenav > .nav-item .sidenav-third-level {
+    padding-left: 0;
+    list-style: none;
+  }
+  /* line 129, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar.scss */
+  #mainNav .navbar-collapse .navbar-sidenav > .nav-item .sidenav-second-level > li,
+  #mainNav .navbar-collapse .navbar-sidenav > .nav-item .sidenav-third-level > li {
+    width: 250px;
+  }
+  /* line 131, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar.scss */
+  #mainNav .navbar-collapse .navbar-sidenav > .nav-item .sidenav-second-level > li > a,
+  #mainNav .navbar-collapse .navbar-sidenav > .nav-item .sidenav-third-level > li > a {
+    padding: 1em;
+  }
+  /* line 136, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar.scss */
+  #mainNav .navbar-collapse .navbar-sidenav > .nav-item .sidenav-second-level > li > a {
+    padding-left: 2em;
+  }
+  /* line 139, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar.scss */
+  #mainNav .navbar-collapse .navbar-sidenav > .nav-item .sidenav-third-level > li > a {
+    padding-left: 3em;
+  }
+  /* line 145, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar.scss */
+  #mainNav .navbar-collapse .navbar-nav > .nav-item.dropdown > .nav-link {
+    min-width: 0;
+  }
+  /* line 147, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar.scss */
+  #mainNav .navbar-collapse .navbar-nav > .nav-item.dropdown > .nav-link:after {
+    width: 24px;
+    text-align: center;
+  }
+  /* line 153, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar.scss */
+  #mainNav .navbar-collapse .navbar-nav > .nav-item.dropdown .dropdown-menu > .dropdown-item > .dropdown-message {
+    max-width: 300px;
+  }
+}
+
+/* line 166, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar.scss */
+#mainNav.navbar-dark .navbar-collapse .navbar-sidenav .nav-link-collapse:after {
+  color: #868e96;
+}
+/* line 170, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar.scss */
+#mainNav.navbar-dark .navbar-collapse .navbar-sidenav > .nav-item > .nav-link {
+  color: #868e96;
+}
+/* line 172, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar.scss */
+#mainNav.navbar-dark .navbar-collapse .navbar-sidenav > .nav-item > .nav-link:hover {
+  color: #adb5bd;
+}
+/* line 178, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar.scss */
+#mainNav.navbar-dark .navbar-collapse .navbar-sidenav > .nav-item .sidenav-second-level > li > a,
+#mainNav.navbar-dark .navbar-collapse .navbar-sidenav > .nav-item .sidenav-third-level > li > a {
+  color: #868e96;
+}
+/* line 180, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar.scss */
+#mainNav.navbar-dark .navbar-collapse .navbar-sidenav > .nav-item .sidenav-second-level > li > a:focus, #mainNav.navbar-dark .navbar-collapse .navbar-sidenav > .nav-item .sidenav-second-level > li > a:hover,
+#mainNav.navbar-dark .navbar-collapse .navbar-sidenav > .nav-item .sidenav-third-level > li > a:focus,
+#mainNav.navbar-dark .navbar-collapse .navbar-sidenav > .nav-item .sidenav-third-level > li > a:hover {
+  color: #adb5bd;
+}
+/* line 188, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar.scss */
+#mainNav.navbar-dark .navbar-collapse .navbar-nav > .nav-item.dropdown > .nav-link:after {
+  color: #adb5bd;
+}
+@media (min-width: 992px) {
+  /* line 194, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar.scss */
+  #mainNav.navbar-dark .navbar-collapse .navbar-sidenav {
+    background: #343a40;
+  }
+  /* line 198, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar.scss */
+  #mainNav.navbar-dark .navbar-collapse .navbar-sidenav li.active a {
+    color: white !important;
+    background-color: #495057;
+  }
+  /* line 201, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar.scss */
+  #mainNav.navbar-dark .navbar-collapse .navbar-sidenav li.active a:focus, #mainNav.navbar-dark .navbar-collapse .navbar-sidenav li.active a:hover {
+    color: white;
+  }
+  /* line 209, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar.scss */
+  #mainNav.navbar-dark .navbar-collapse .navbar-sidenav > .nav-item .sidenav-second-level,
+  #mainNav.navbar-dark .navbar-collapse .navbar-sidenav > .nav-item .sidenav-third-level {
+    background: #343a40;
+  }
+}
+
+/* line 224, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar.scss */
+#mainNav.navbar-light .navbar-collapse .navbar-sidenav .nav-link-collapse:after {
+  color: rgba(0, 0, 0, 0.5);
+}
+/* line 228, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar.scss */
+#mainNav.navbar-light .navbar-collapse .navbar-sidenav > .nav-item > .nav-link {
+  color: rgba(0, 0, 0, 0.5);
+}
+/* line 230, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar.scss */
+#mainNav.navbar-light .navbar-collapse .navbar-sidenav > .nav-item > .nav-link:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+/* line 236, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar.scss */
+#mainNav.navbar-light .navbar-collapse .navbar-sidenav > .nav-item .sidenav-second-level > li > a,
+#mainNav.navbar-light .navbar-collapse .navbar-sidenav > .nav-item .sidenav-third-level > li > a {
+  color: rgba(0, 0, 0, 0.5);
+}
+/* line 238, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar.scss */
+#mainNav.navbar-light .navbar-collapse .navbar-sidenav > .nav-item .sidenav-second-level > li > a:focus, #mainNav.navbar-light .navbar-collapse .navbar-sidenav > .nav-item .sidenav-second-level > li > a:hover,
+#mainNav.navbar-light .navbar-collapse .navbar-sidenav > .nav-item .sidenav-third-level > li > a:focus,
+#mainNav.navbar-light .navbar-collapse .navbar-sidenav > .nav-item .sidenav-third-level > li > a:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+/* line 246, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar.scss */
+#mainNav.navbar-light .navbar-collapse .navbar-nav > .nav-item.dropdown > .nav-link:after {
+  color: rgba(0, 0, 0, 0.5);
+}
+@media (min-width: 992px) {
+  /* line 252, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar.scss */
+  #mainNav.navbar-light .navbar-collapse .navbar-sidenav {
+    background: #f8f9fa;
+  }
+  /* line 256, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar.scss */
+  #mainNav.navbar-light .navbar-collapse .navbar-sidenav li.active a {
+    color: #000 !important;
+    background-color: #e9ecef;
+  }
+  /* line 259, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar.scss */
+  #mainNav.navbar-light .navbar-collapse .navbar-sidenav li.active a:focus, #mainNav.navbar-light .navbar-collapse .navbar-sidenav li.active a:hover {
+    color: #000;
+  }
+  /* line 267, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar.scss */
+  #mainNav.navbar-light .navbar-collapse .navbar-sidenav > .nav-item .sidenav-second-level,
+  #mainNav.navbar-light .navbar-collapse .navbar-sidenav > .nav-item .sidenav-third-level {
+    background: #f8f9fa;
+  }
+}
+
+/* line 2, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar_fixed.scss */
+#mainNav.fixed-top .sidenav-toggler {
+  display: none;
+}
+@media (min-width: 992px) {
+  /* line 6, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar_fixed.scss */
+  #mainNav.fixed-top .navbar-sidenav {
+    height: calc(100vh - 112px);
+  }
+  /* line 9, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar_fixed.scss */
+  #mainNav.fixed-top .sidenav-toggler {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -ms-flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    margin-top: calc(100vh - 56px);
+  }
+  /* line 23, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar_fixed.scss */
+  #mainNav.fixed-top .sidenav-toggler > .nav-item {
+    width: 250px;
+    padding: 0;
+  }
+  /* line 26, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar_fixed.scss */
+  #mainNav.fixed-top .sidenav-toggler > .nav-item > .nav-link {
+    padding: 1em;
+  }
+}
+/* line 33, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar_fixed.scss */
+#mainNav.fixed-top.navbar-dark .sidenav-toggler {
+  background-color: #212529;
+}
+/* line 36, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar_fixed.scss */
+#mainNav.fixed-top.navbar-dark .sidenav-toggler a i {
+  color: #adb5bd;
+}
+/* line 43, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar_fixed.scss */
+#mainNav.fixed-top.navbar-light .sidenav-toggler {
+  background-color: #dee2e6;
+}
+/* line 46, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar_fixed.scss */
+#mainNav.fixed-top.navbar-light .sidenav-toggler a i {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* line 56, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar_fixed.scss */
+body.sidenav-toggled #mainNav.fixed-top .sidenav-toggler {
+  overflow-x: hidden;
+  width: 55px;
+}
+/* line 60, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar_fixed.scss */
+body.sidenav-toggled #mainNav.fixed-top .sidenav-toggler .nav-item,
+body.sidenav-toggled #mainNav.fixed-top .sidenav-toggler .nav-link {
+  width: 55px !important;
+}
+/* line 66, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar_fixed.scss */
+body.sidenav-toggled #mainNav.fixed-top #sidenavToggler i {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  -webkit-filter: FlipH;
+          filter: FlipH;
+  -ms-filter: 'FlipH';
+}
+
+/* line 2, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar_static.scss */
+#mainNav.static-top .sidenav-toggler {
+  display: none;
+}
+@media (min-width: 992px) {
+  /* line 6, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar_static.scss */
+  #mainNav.static-top .sidenav-toggler {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+/* line 15, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar_static.scss */
+body.sidenav-toggled #mainNav.static-top #sidenavToggler i {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  -webkit-filter: FlipH;
+          filter: FlipH;
+  -ms-filter: 'FlipH';
+}
+
+/* line 1, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar_toggle.scss */
+.content-wrapper {
+  overflow-x: hidden;
+  background: white;
+}
+@media (min-width: 992px) {
+  /* line 1, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar_toggle.scss */
+  .content-wrapper {
+    margin-left: 250px;
+  }
+}
+
+/* line 12, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar_toggle.scss */
+#sidenavToggler i {
+  font-weight: 800;
+}
+
+/* line 17, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar_toggle.scss */
+.navbar-sidenav-tooltip.show {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  /* line 22, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar_toggle.scss */
+  body.sidenav-toggled .content-wrapper {
+    margin-left: 55px;
+  }
+}
+/* line 27, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar_toggle.scss */
+body.sidenav-toggled .navbar-sidenav {
+  overflow-x: hidden;
+  width: 55px;
+}
+/* line 31, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar_toggle.scss */
+body.sidenav-toggled .navbar-sidenav .nav-link-text {
+  display: none;
+}
+/* line 34, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar_toggle.scss */
+body.sidenav-toggled .navbar-sidenav .nav-item,
+body.sidenav-toggled .navbar-sidenav .nav-link {
+  width: 55px !important;
+}
+/* line 37, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar_toggle.scss */
+body.sidenav-toggled .navbar-sidenav .nav-item:after,
+body.sidenav-toggled .navbar-sidenav .nav-link:after {
+  display: none;
+}
+/* line 42, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_navbar_toggle.scss */
+body.sidenav-toggled .navbar-sidenav-tooltip.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 1, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_login.scss */
+.card-login {
+  max-width: 25rem;
+}
+
+/* line 5, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_login.scss */
+.card-register {
+  max-width: 40rem;
+}
+
+/* line 1, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_footer.scss */
+footer.sticky-footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 56px;
+  background-color: #e9ecef;
+  line-height: 55px;
+}
+@media (min-width: 992px) {
+  /* line 1, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_footer.scss */
+  footer.sticky-footer {
+    width: calc(100% - 250px);
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 19, /home/will/dev/appz/reliqua/vendor/assets/stylesheets/_footer.scss */
+  body.sidenav-toggled footer.sticky-footer {
+    width: calc(100% - 55px);
+  }
+}
