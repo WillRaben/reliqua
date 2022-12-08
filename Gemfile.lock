@@ -117,7 +117,7 @@ GEM
     minitest (5.14.0)
     multi_json (1.13.1)
     nio4r (2.3.1)
-    nokogiri (1.13.8)
+    nokogiri (1.13.10)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     oink (0.10.1)
@@ -133,7 +133,7 @@ GEM
     public_suffix (5.0.0)
     puma (4.3.12)
       nio4r (~> 2.0)
-    racc (1.6.0)
+    racc (1.6.1)
     rack (2.2.4)
     rack-proxy (0.6.4)
       rack
